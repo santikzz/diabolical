@@ -12,7 +12,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: crosshair;
 }
 
 body {
@@ -692,6 +691,7 @@ body {
 
 .card_box {
   position: relative;
+  cursor: pointer;
 }
 
 .card_box .tag {
@@ -741,36 +741,4 @@ body {
 .card_box .tag span:nth-child(2) {
   bottom: 0px;
   right: 0px;
-}
-
-.underline-button {
-  cursor: pointer;
-  position: relative;
-  border: none;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}
-.underline-button:focus,
-.underline-button:hover {
-  color: #fff;
-}
-.underline-button:focus:after,
-.underline-button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-.underline-button:after {
-  content: "";
-  pointer-events: none;
-  /* bottom: -2px; */
-  top: 4rem;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
 }
