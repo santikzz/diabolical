@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: 'diabolical',
+  assetPrefix: '',
   basePath: '',
 };
 
